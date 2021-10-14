@@ -1,7 +1,6 @@
 <?php
 // require "include/functions.php"; <-- diambil dari page root
 ?>
-<title><?php echo $nama_sistem ?></title>
 <style>
   body {
     margin: 0;

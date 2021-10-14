@@ -1,6 +1,5 @@
 <?php
 require "include/functions.php";
-include "./include/header.php";
 ?>
 
 <!-- mula html -->
@@ -11,11 +10,12 @@ include "./include/header.php";
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title><?= $nama_sistem; ?></title>
 </head>
 
 <body>
   <header>
+    <?php include "./include/header.php"; ?>
     <?php include "./include/menu1.php"; ?>
     <center>
       <h2>
