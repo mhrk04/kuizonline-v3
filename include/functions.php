@@ -7,8 +7,8 @@ $subjek = "Sejarah Tingkatan 3";
 $nama_sekolah = "SMK Cheras";
 $nama_sistem = "Sistem penilaian kendiri";
 $motto_sistem = "SOALAN : MCQ/TRUE|FALSE/FILL IN THE BLANK";
-$footer = "Self Monitoring Learning System";
-$logo = "/kuizonline-v3/img/logo.png";
+$footer = "Mhaziqrk";
+$logo = "img/logo.png";
 //function mengquery database
 function query($query)
 {
