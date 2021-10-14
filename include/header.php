@@ -1,30 +1,40 @@
 <?php
-require "../include/functions.php";
+// require "include/functions.php"; <-- diambil dari page root
 ?>
+<title><?php echo $nama_sistem ?></title>
+<style>
+  body {
+    margin: 0;
+  }
 
-<html>
+  .tajuk {
+    color: red;
+    font-size: 2.6em;
+    background-color: aqua;
+  }
 
-<head>
-  <title><?php echo $nama_sistem ?></title>
-  <style>
-    .tajuk {
-      color: red;
-      font-size: 3.5em;
-    }
+  .subjek {
+    color: blue;
+    font-size: 1.5em;
+  }
 
-    .subjek {
-      color: blue;
-      font-size: 2.5em;
-    }
-  </style>
-</head>
+  .head {
+    border: black 2px solid;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    align-items: center;
+    margin: 0;
 
-<body>
+  }
+</style>
+<div class="head">
   <center>
     <center>
       <h1 class="tajuk">
         <?= $nama_sistem; ?>
-      </h1><br>
+      </h1>
       <h2 class="subjek">
         <?= $subjek; ?>
       </h2>
@@ -33,7 +43,5 @@ require "../include/functions.php";
     <input type="button" value="--" onclick="zoomOut()">
     <!-- <button id="color">warna</button> -->
   </center>
-  <script src="../js/utility.js"></script>
-</body>
-
-</html>
+  <script src="js/utility.js"></script>
+</div>
