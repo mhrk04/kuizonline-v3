@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg
+PUBLIC "-//W3C//DTD SVG 1.1//EN"
+       "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="256 98 1083 625" width="827px" height="527px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+   <line x1="377" y1="163" x2="387" y2="163" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="964" y1="145" x2="974" y2="145" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="387" y1="163" x2="964" y2="145" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="384.5" y1="163" x2="380.96446609407" y2="166.53553390593" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="384.5" y1="163" x2="380.96446609407" y2="159.46446609407" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="969" y1="145" x2="965.46446609407" y2="148.53553390593" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="969" y1="145" x2="965.46446609407" y2="141.46446609407" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="377" y1="183" x2="387" y2="183" style="stroke:#0b0;stroke-width:1;"/>
+   <line x1="914" y1="448" x2="924" y2="448" style="stroke:#0b0;stroke-width:1;"/>
+   <line x1="387" y1="183" x2="914" y2="448" style="stroke:#0b0;stroke-width:1;"/>
+   <line x1="384.5" y1="183" x2="380.96446609407" y2="186.53553390593" style="stroke:#0b0;stroke-width:2;"/>
+   <line x1="384.5" y1="183" x2="380.96446609407" y2="179.46446609407" style="stroke:#0b0;stroke-width:2;"/>
+   <line x1="919" y1="448" x2="915.46446609407" y2="451.53553390593" style="stroke:#0b0;stroke-width:2;"/>
+   <line x1="919" y1="448" x2="915.46446609407" y2="444.46446609407" style="stroke:#0b0;stroke-width:2;"/>
+   <line x1="415" y1="531" x2="425" y2="531" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="603" y1="500" x2="613" y2="500" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="425" y1="531" x2="603" y2="500" style="stroke:#bbb;stroke-width:1;"/>
+   <line x1="422.5" y1="531" x2="418.96446609407" y2="534.53553390593" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="422.5" y1="531" x2="418.96446609407" y2="527.46446609407" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="608" y1="500" x2="604.46446609407" y2="503.53553390593" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="608" y1="500" x2="604.46446609407" y2="496.46446609407" style="stroke:#bbb;stroke-width:2;"/>
+   <line x1="708" y1="600" x2="718" y2="600" style="stroke:#0bf;stroke-width:1;"/>
+   <line x1="914" y1="448" x2="924" y2="448" style="stroke:#0bf;stroke-width:1;"/>
+   <line x1="718" y1="600" x2="914" y2="448" style="stroke:#0bf;stroke-width:1;"/>
+   <line x1="715.5" y1="600" x2="711.96446609407" y2="603.53553390593" style="stroke:#0bf;stroke-width:2;"/>
+   <line x1="715.5" y1="600" x2="711.96446609407" y2="596.46446609407" style="stroke:#0bf;stroke-width:2;"/>
+   <line x1="919" y1="448" x2="915.46446609407" y2="451.53553390593" style="stroke:#0bf;stroke-width:2;"/>
+   <line x1="919" y1="448" x2="915.46446609407" y2="444.46446609407" style="stroke:#0bf;stroke-width:2;"/>
+   <rect width="94" height="20" x="974" y="115" style="fill:#007;stroke:black;"/>
+   <text width="94" height="20" x="979" y="129" style="fill:#fff;" font-family="Arial" font-size="16px"> pengguna</text>
+   <rect width="94" height="20" x="974" y="135" style="fill:none;stroke:black;"/>
+   <text width="94" height="20" x="979" y="149" style="fill:black;" font-family="Arial" font-size="16px">idpengguna</text>
+   <rect width="94" height="20" x="974" y="155" style="fill:none;stroke:black;"/>
+   <text width="94" height="20" x="979" y="169" style="fill:black;" font-family="Arial" font-size="16px">password</text>
+   <rect width="94" height="20" x="974" y="175" style="fill:none;stroke:black;"/>
+   <text width="94" height="20" x="979" y="189" style="fill:black;" font-family="Arial" font-size="16px">nama</text>
+   <rect width="94" height="20" x="974" y="195" style="fill:none;stroke:black;"/>
+   <text width="94" height="20" x="979" y="209" style="fill:black;" font-family="Arial" font-size="16px">jantina</text>
+   <rect width="94" height="20" x="974" y="215" style="fill:none;stroke:black;"/>
+   <text width="94" height="20" x="979" y="229" style="fill:black;" font-family="Arial" font-size="16px">aras</text>
+   <rect width="106" height="20" x="271" y="113" style="fill:#007;stroke:black;"/>
+   <text width="106" height="20" x="276" y="127" style="fill:#fff;" font-family="Arial" font-size="16px"> perekodan</text>
+   <rect width="106" height="20" x="271" y="133" style="fill:#aea;stroke:black;"/>
+   <text width="106" height="20" x="276" y="147" style="fill:black;" font-family="Arial" font-size="16px">idperekodan</text>
+   <rect width="106" height="20" x="271" y="153" style="fill:none;stroke:black;"/>
+   <text width="106" height="20" x="276" y="167" style="fill:black;" font-family="Arial" font-size="16px">idpengguna</text>
+   <rect width="106" height="20" x="271" y="173" style="fill:none;stroke:black;"/>
+   <text width="106" height="20" x="276" y="187" style="fill:black;" font-family="Arial" font-size="16px">idtopik</text>
+   <rect width="106" height="20" x="271" y="193" style="fill:none;stroke:black;"/>
+   <text width="106" height="20" x="276" y="207" style="fill:black;" font-family="Arial" font-size="16px">jenis</text>
+   <rect width="106" height="20" x="271" y="213" style="fill:none;stroke:black;"/>
+   <text width="106" height="20" x="276" y="227" style="fill:black;" font-family="Arial" font-size="16px">skor</text>
+   <rect width="106" height="20" x="271" y="233" style="fill:none;stroke:black;"/>
+   <text width="106" height="20" x="276" y="247" style="fill:black;" font-family="Arial" font-size="16px">catatan_masa</text>
+   <rect width="121" height="20" x="294" y="421" style="fill:#007;stroke:black;"/>
+   <text width="121" height="20" x="299" y="435" style="fill:#fff;" font-family="Arial" font-size="16px"> pilihan</text>
+   <rect width="121" height="20" x="294" y="441" style="fill:#aea;stroke:black;"/>
+   <text width="121" height="20" x="299" y="455" style="fill:black;" font-family="Arial" font-size="16px">idpilihan</text>
+   <rect width="121" height="20" x="294" y="461" style="fill:none;stroke:black;"/>
+   <text width="121" height="20" x="299" y="475" style="fill:black;" font-family="Arial" font-size="16px">nom_soalan</text>
+   <rect width="121" height="20" x="294" y="481" style="fill:none;stroke:black;"/>
+   <text width="121" height="20" x="299" y="495" style="fill:black;" font-family="Arial" font-size="16px">jawapan</text>
+   <rect width="121" height="20" x="294" y="501" style="fill:none;stroke:black;"/>
+   <text width="121" height="20" x="299" y="515" style="fill:black;" font-family="Arial" font-size="16px">pilihan_jawapan</text>
+   <rect width="121" height="20" x="294" y="521" style="fill:none;stroke:black;"/>
+   <text width="121" height="20" x="299" y="535" style="fill:black;" font-family="Arial" font-size="16px">idsoalan</text>
+   <rect width="95" height="20" x="613" y="470" style="fill:#007;stroke:black;"/>
+   <text width="95" height="20" x="618" y="484" style="fill:#fff;" font-family="Arial" font-size="16px"> soalan</text>
+   <rect width="95" height="20" x="613" y="490" style="fill:#aea;stroke:black;"/>
+   <text width="95" height="20" x="618" y="504" style="fill:black;" font-family="Arial" font-size="16px">idsoalan</text>
+   <rect width="95" height="20" x="613" y="510" style="fill:none;stroke:black;"/>
+   <text width="95" height="20" x="618" y="524" style="fill:black;" font-family="Arial" font-size="16px">nom_soalan</text>
+   <rect width="95" height="20" x="613" y="530" style="fill:none;stroke:black;"/>
+   <text width="95" height="20" x="618" y="544" style="fill:black;" font-family="Arial" font-size="16px">soalan</text>
+   <rect width="95" height="20" x="613" y="550" style="fill:none;stroke:black;"/>
+   <text width="95" height="20" x="618" y="564" style="fill:black;" font-family="Arial" font-size="16px">gambarajah</text>
+   <rect width="95" height="20" x="613" y="570" style="fill:none;stroke:black;"/>
+   <text width="95" height="20" x="618" y="584" style="fill:black;" font-family="Arial" font-size="16px">jenis</text>
+   <rect width="95" height="20" x="613" y="590" style="fill:none;stroke:black;"/>
+   <text width="95" height="20" x="618" y="604" style="fill:black;" font-family="Arial" font-size="16px">idtopik</text>
+   <rect width="63" height="20" x="924" y="418" style="fill:#007;stroke:black;"/>
+   <text width="63" height="20" x="929" y="432" style="fill:#fff;" font-family="Arial" font-size="16px"> topik</text>
+   <rect width="63" height="20" x="924" y="438" style="fill:#aea;stroke:black;"/>
+   <text width="63" height="20" x="929" y="452" style="fill:black;" font-family="Arial" font-size="16px">idtopik</text>
+   <rect width="63" height="20" x="924" y="458" style="fill:none;stroke:black;"/>
+   <text width="63" height="20" x="929" y="472" style="fill:black;" font-family="Arial" font-size="16px">topik</text>
+   <rect width="63" height="20" x="924" y="478" style="fill:none;stroke:black;"/>
+   <text width="63" height="20" x="929" y="492" style="fill:black;" font-family="Arial" font-size="16px">markah</text>
+</svg>
