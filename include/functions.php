@@ -54,3 +54,24 @@ function login($data)
     header("Location: index2.php");
   }
 }
+
+
+// fungsi register
+function register($data)
+{
+  global $conn;
+  $idpengguna = htmlspecialchars($data['idpengguna']);
+  $pass = mysqli_real_escape_string($conn, $data['password']);
+  $nama = htmlspecialchars($data['nama']);
+  $jantina = htmlspecialchars($data['jantina']);
+  //cek kau value kosong
+  if (empty($idpengguna || $pass || $nama || $jantina)) {
+    return [
+      'error' => true,
+      'pesan' => 'Pastikan semua ruangan diisi!'
+    ];
+    exit;
+  }
+  // cek ID dah ade blum sudah ada atau belum
+
+}

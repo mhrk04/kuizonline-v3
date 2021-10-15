@@ -1,6 +1,9 @@
 <?php
 require "./include/functions.php";
 include "./include/header.php";
+if (isset($_POST['signup'])) {
+  $register = register($_POST);
+}
 ?>
 
 
@@ -25,6 +28,11 @@ include "./include/header.php";
   <header><?php require "./include/menu1.php" ?></header>
   <center>
     <h2>Pendaftaran pengguna Baru</h2>
+
+    <!-- untuk pesan error -->
+    <?php if (isset($register['error'])) : ?>
+      <p style="color: red; font-style:italic;"><?= $register['pesan']; ?></p>
+    <?php endif; ?>
   </center>
   <table>
     <tr>
@@ -41,13 +49,14 @@ include "./include/header.php";
           <input id="nama" size="50" type="text" name="nama" placeholder="Nama Penuh" required>
           <br>
           <label for="jantina">jantina</label><br>
-          <select name="jantina" id="jantina">
-            <option hidden value="">--pilih--</option>
+          <select required name="jantina" id="jantina">
+            <option hidden value="">--Pilih--</option>
             <option value="LELAKI">LELAKI</option>
             <option value="PEREMPUAN">PEREMPUAN</option>
           </select><br>
           <br>
-          <button type="reset">Reset</button><button type="submit">Daftar</button><br><br>
+          <button type="reset">Reset</button>
+          <button name="signup" type="submit">Daftar</button><br><br>
         </form>
       </td>
     </tr>
