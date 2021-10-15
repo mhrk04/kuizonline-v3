@@ -61,7 +61,7 @@ if (isset($_POST['submit'])) {
             </label>
           </td>
           <td class="login">
-            <input id="fname" placeholder="No. Kad Pengenalan anda" type="text" name="idpengguna" maxlength='12' onkeypress='return event.charCode >= 8 && event.charCode <= 57' required autofocus>
+            <input id="fname" autocomplete="off" placeholder="No. Kad Pengenalan anda" type="text" name="idpengguna" maxlength='12' onkeypress='return event.charCode >= 8 && event.charCode <= 57' required autofocus>
           </td>
         </tr>
         <tr>
