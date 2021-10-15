@@ -1,6 +1,7 @@
 <?php
-
+session_start();
 require "include/functions.php";
+sec();
 $pelajar = query("SELECT * FROM pengguna WHERE aras = 'PELAJAR' ORDER BY nama ASC");
 ?>
 <!DOCTYPE html>
@@ -25,6 +26,7 @@ $pelajar = query("SELECT * FROM pengguna WHERE aras = 'PELAJAR' ORDER BY nama AS
   <div>
     <?php
     require "include/header.php";
+    require "./include/menu.php";
     ?>
   </div>
   <div>
