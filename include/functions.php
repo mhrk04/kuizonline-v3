@@ -73,5 +73,20 @@ function register($data)
     exit;
   }
   // cek ID dah ade blum sudah ada atau belum
-
+  $result = mysqli_query($conn, "SELECT idpengguna FROM pengguna WHERE idpengguna = '$idpengguna' ");
+  if (mysqli_fetch_assoc($result)) {
+    return [
+      'error' => true,
+      'pesan' => 'ID telah digunakan!'
+    ];
+    exit;
+  }
+  //masukkan user ke database jika ok
+  $que = "INSERT INTO pengguna VALUES('$idpengguna','$pass','$nama','$jantina','PELAJAR')";
+  mysqli_query($conn, $que);
+  if (mysqli_affected_rows($conn) > 0) {
+    echo "<script>
+   alert('Tahniah! Anda telah terdaftar.');
+   </script>";
+  }
 }
