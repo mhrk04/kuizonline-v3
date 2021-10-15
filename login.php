@@ -61,7 +61,7 @@ if (isset($_POST['submit'])) {
             </label>
           </td>
           <td class="login">
-            <input id="fname" autocomplete="off" placeholder="No. Kad Pengenalan anda" type="text" name="idpengguna" maxlength='12' onkeypress='return event.charCode >= 8 && event.charCode <= 57' required autofocus>
+            <input id="fname" autocomplete="off" placeholder="No. Kad Pengenalan" type="text" name="idpengguna" maxlength='12' onkeypress='return event.charCode >= 8 && event.charCode <= 57' required autofocus>
           </td>
         </tr>
         <tr>
@@ -69,7 +69,7 @@ if (isset($_POST['submit'])) {
             <label for="katalaluan">Katalaluan</label>
           </td>
           <td class="login">
-            <input type="password" id="katalaluan" name="password" placeholder="Letakkan password anda" maxlength='4' onkeypress='return event.charCode >= 8 &&
+            <input type="password" id="katalaluan" name="password" placeholder="Letakkan password" maxlength='4' onkeypress='return event.charCode >= 8 &&
     event.charCode <= 57' required>
           </td>
         </tr>
