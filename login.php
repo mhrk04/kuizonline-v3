@@ -1,5 +1,9 @@
 <?php
 session_start();
+if (isset($_SESSION['idpengguna'])) {
+  header("Location: index2.php");
+  exit;
+}
 require "include/functions.php";
 // ketika tombol login ditekan
 if (isset($_POST['submit'])) {
