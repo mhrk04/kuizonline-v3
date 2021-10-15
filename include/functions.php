@@ -20,3 +20,25 @@ function query($query)
   }
   return $rows;
 }
+
+
+//funsi Log in
+function login($data)
+{
+  global $conn;
+  $user = htmlspecialchars($data['idpengguna']);
+  $pass = htmlentities($data['password']);
+  $query = mysqli_query($conn, "SELECT * FROM pengguna WHERE idpengguna = '$user' AND password = '$pass'");
+  $row = mysqli_fetch_assoc($query);
+  if (mysqli_num_rows($query) == 0 || $row['password'] != $pass) {
+    return [
+      'error' => true,
+      'pesan' => 'IDPengguna / Password Salah!'
+    ];
+    exit;
+  } else {
+    $_SESSION['idpengguna'] = $row['idpengguna'];
+    $_SESSION['level'] = $row['aras'];
+    header("Location: index2.php");
+  }
+}

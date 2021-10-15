@@ -12,7 +12,13 @@ function zoomOut() {
   fontSize -= 0.1;
   document.body.style.fontSize = fontSize + "em";
 }
-
+// check panjang IC
+function checkLenght(el) {
+  if (el.value.lenght != 12) {
+    alert("No. KP mesti 12 digit")
+  }
+}
+console.log("tamat")
 //Fungsi tukar warna
 // document.getElementById('color').onclick = changeColor;
 // var currentColor = "red";

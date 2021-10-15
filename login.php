@@ -1,5 +1,10 @@
 <?php
+session_start();
 require "include/functions.php";
+// ketika tombol login ditekan
+if (isset($_POST['submit'])) {
+  $login = login($_POST);
+}
 ?>
 
 <!DOCTYPE html>
@@ -42,6 +47,9 @@ require "include/functions.php";
   </head>
   <center>
     <h2>Log Masuk Pengguna</h2>
+    <?php if (isset($login['error'])) : ?>
+      <p style="color: red; font-style:italic;"><?= $login['pesan']; ?></p>
+    <?php endif; ?>
   </center>
   <main>
     <form action="" method="POST">
@@ -61,14 +69,14 @@ require "include/functions.php";
             <label for="katalaluan">Katalaluan</label>
           </td>
           <td class="login">
-            <input " type=" password" id="katalaluan" name="password" placeholder="Letakkan password anda" maxlength='4' onkeypress='return event.charCode >= 8 &&
+            <input type="password" id="katalaluan" name="password" placeholder="Letakkan password anda" maxlength='4' onkeypress='return event.charCode >= 8 &&
     event.charCode <= 57' required>
           </td>
         </tr>
         <tr>
           <td colspan="2">
             <center>
-              <button type="submit">Log Masuk</button>
+              <button type="submit" name="submit">Log Masuk</button>
               <button type="reset">Reset</button>
               <br>
               <h5>*Jika belum mendaftar, <a href="./daftar_baru.php">Daftar di sini</a></h5>
