@@ -20,7 +20,19 @@ function query($query)
   }
   return $rows;
 }
+//fungsi keselamatan
+function sec()
+{
+  if (!isset($_SESSION['idpengguna'])) {
+    // return [
+    //   'error' => true,
+    //   'pesan' => 'Sila Log Masuk terlebih dahulu sebelum menjawab kuiz!'
+    // ];
+    header("Location: login.php");
 
+    exit();
+  }
+}
 
 //funsi Log in
 function login($data)
