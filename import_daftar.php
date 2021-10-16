@@ -3,18 +3,36 @@ session_start();
 require './include/functions.php';
 sec();
 if (isset($_POST['import'])) {
-  if (import($_POST) > 0) {
+  // cek ada isi tak
+  $is_uploading = $_FILES["file"]["error"];
+  $can_pass = $is_uploading == 0 ? true : false;
+  if ($can_pass) {
+    $namafail = $_FILES['file']['tmp_name'];
+    $fail = fopen($namafail, "r");
+    while (!feof($fail)) {
+      $medan = explode(",", fgets($fail));
+      $idpengguna = $medan[0];
+      $pass = $medan[1];
+      $nama = $medan[2];
+      $jant = $medan[3];
+      $sql = "INSERT INTO pengguna VALUES ('$idpengguna','$pass','$nama','$jant','PELAJAR')";
+      mysqli_query($conn, $sql);
+    }
+  }
+  if (mysqli_affected_rows($conn) !== 0) {
     echo "
         <script>
         alert('data berjaya ditambah');
+        document.location.href = 'senarai_pelajar.php';
         </script>
+        
         ";
   } else {
     echo "
-    <script>
-    alert('data tidak berjaya ditambah');
-    </script>
-    ";
+        <script>
+        alert('data tidak berjaya ditambah');
+        document.location.href = 'import_daftar.php';
+        </script>";
   }
 }
 ?>
