@@ -2,6 +2,21 @@
 session_start();
 require './include/functions.php';
 sec();
+if (isset($_POST['import'])) {
+  if (import($_POST) > 0) {
+    echo "
+        <script>
+        alert('data berjaya ditambah');
+        </script>
+        ";
+  } else {
+    echo "
+    <script>
+    alert('data tidak berjaya ditambah');
+    </script>
+    ";
+  }
+}
 ?>
 
 
