@@ -36,12 +36,12 @@ $pelajar = query("SELECT * FROM pengguna WHERE aras = 'PELAJAR' ORDER BY nama AS
     <main>
       <table align="center">
         <tr>
-          <td width="5%">Bil.</td>
-          <td width="10%">ID Pelajar</td>
-          <td width="5%">Password</td>
-          <td width="50%">Nama Pelajar</td>
-          <td width="5%">Jantina</td>
-          <td width="5%">Tindakan</td>
+          <th width="5%">Bil.</th>
+          <th width="10%">ID Pelajar</th>
+          <th width="5%">Password</th>
+          <th width="50%">Nama Pelajar</th>
+          <th width="5%">Jantina</th>
+          <th width="5%">Tindakan</th>
         </tr>
         <?php $j = 1; ?>
         <?php foreach ($pelajar as $pel) : ?>
