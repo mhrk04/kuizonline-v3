@@ -90,24 +90,3 @@ function register($data)
    </script>";
   }
 }
-// fungsi import
-function import($data)
-{
-  global $conn;
-  $filename = $_FILES["file"]["tmp_name"];
-  $is_uploading = $filename;
-  $can_pass = $is_uploading == 0 ? true : false;
-
-  if ($can_pass) {
-    $file = fopen($filename, "r");
-    while (($medan = fgetcsv($file, 1000000, ",")) !== false) {
-      $import = "INSERT INTO pengguna VALUES('" . $medan[0] . "','" . $medan[1] . "')";
-      $tambah = mysqli_query($conn, $import);
-      if (!isset($tambah)) {
-        return false;
-      } else {
-        return mysqli_affected_rows($conn);
-      }
-    }
-  }
-}
