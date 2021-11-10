@@ -1,6 +1,6 @@
 <?php
 // sambung ke database
-$conn = mysqli_connect("localhost", "root", "12345678", "kuizonlinev3");
+$conn = mysqli_connect("localhost", "root", "", "kuizonlinev3");
 // penetapan sistem
 $lencana = "../img/logo.png";
 $subjek = "Sejarah Tingkatan 3";
