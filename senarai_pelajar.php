@@ -1,5 +1,9 @@
 <?php
 session_start();
+if ($_SESSION['level'] != "ADMIN") {
+  header("Location: login.php");
+  exit;
+}
 require "include/functions.php";
 sec();
 $pelajar = query("SELECT * FROM pengguna WHERE aras = 'PELAJAR' ORDER BY nama ASC");
