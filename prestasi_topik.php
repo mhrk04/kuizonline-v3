@@ -37,6 +37,21 @@ sec();
         <td width="10%"><b>Bil. Menjawab</b></td>
         <td width="8%"><b>Laporan</b></td>
       </tr>
+      <?php
+      $no = 1;
+      $topik = mysqli_query($conn, "SELECT * FROM topik");
+      while ($infoTopik = mysqli_fetch_array($topik)) {
+        $rekod = mysqli_query($conn, "SELECT idtopik,COUNT(idtopik) as 'bil' FROM perekodan WHERE idtopik='$infoTopik[idtopik]'");
+        $infoJawab = mysqli_fetch_assoc($rekod);
+      ?>
+        <tr>
+          <td><?= $no; ?></td>
+          <td><?= $infoTopik['topik']; ?></td>
+          <td><?= $infoJawab['bil']; ?></td>
+          <td><a href="laporan_guru.php?idtopik=<?= $infoTopik['idtopik']; ?> ">Buka</a></td>
+        </tr>
+      <?php $no++;
+      } ?>
     </table>
   </main>
 </body>
