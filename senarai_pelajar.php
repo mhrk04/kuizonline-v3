@@ -33,6 +33,11 @@ if (isset($_POST['buttonDelete'])) {
       text-align: center;
       font-size: 16px;
     }
+
+    .hapus {
+      position: relative;
+      right: -80%;
+    }
   </style>
 </head>
 
@@ -49,9 +54,9 @@ if (isset($_POST['buttonDelete'])) {
     </center>
     <main>
       <form action="" method="POST">
-        <center>
+        <div class="hapus">
           <input type="submit" name="buttonDelete" value="Delete" onclick="return confirm('Are you sure?')" />
-        </center>
+        </div>
         <table align="center">
           <tr>
             <th width="1%"></th>
