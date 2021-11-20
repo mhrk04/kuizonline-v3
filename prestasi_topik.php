@@ -25,6 +25,20 @@ sec();
   <nav>
     <?php include "include/menu.php" ?>
   </nav>
+
+  <center>
+    <h2>PRESTASI PELAJAR BERDASARKAN TOPIK</h2>
+  </center>
+  <main>
+    <table width="70%" border="0" align="center" style="font-size: 16px;">
+      <tr>
+        <td width="2%"><b>Bil.</b></td>
+        <td width="50%"><b>Topik</b></td>
+        <td width="10%"><b>Bil. Menjawab</b></td>
+        <td width="8%"><b>Laporan</b></td>
+      </tr>
+    </table>
+  </main>
 </body>
 
 </html>
